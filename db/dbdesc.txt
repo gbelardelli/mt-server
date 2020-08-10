@@ -1,0 +1,29 @@
+Here's some description of database
+
+TABLE items:
+    durationDesc format:
+        null or empty string = the duration field is in minutes.
+        M<number> = Every M minutes emit a trigger
+        S<number> = Every S seconds emit a trigger
+
+    goalDesc format:
+        null or empty string = no goal
+        #BPM<number> = tempo goal followed by tempo in bpm
+        #<number>@<string> = generic numeric goal with user description
+        <string> = user text goal
+
+    scheduleDesc format:
+        null or empty string = no schedule
+        W<number> = weekly schedule in format 0xFFFFFF7F 
+        M<number> = monthly schedule in format 0x7FFFFFFF
+
+TABLE itemLink:
+	linkType:
+		0 = http link
+		1 = image
+		
+TABLE practice:
+	status:
+		0 = da fare
+		1 = iniziato
+		2 = completato

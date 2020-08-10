@@ -1,0 +1,13 @@
+{
+    "serverConfig": {
+        "app_name": "mt-server",
+        "app_desc": "",
+        "node_port": 3000,
+		"database": "",
+        "db_path" : "./db/",
+        "defaultInstruments" : ["Chitarra", "Pianoforte", "Basso", "Batteria"],
+        "defaultCategories" : ["Repertorio", "Riff", "Accordi", "Solo", "Scale","Arpeggi",
+            "Tecnica","Improvvisazione","Teoria","Riscaldamento",
+            "Solfeggio ritmico","Coordinazione","Indipendenza","Groove","Ear Training"]
+    }
+}
