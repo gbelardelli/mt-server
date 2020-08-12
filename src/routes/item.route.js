@@ -13,13 +13,26 @@ module.exports = function(router)
 
     router.get( '/api/items/', (req, res) => 
     {
-        dataModel.readTable("items", (data) => {
+        dataModel.getItems( (data) => {
+            console.log("get: ", data);
             res.send(data);
         });
     });
 
-    //router.post('/api/items/', itemController.create);
-    //router.patch('/api/items/', itemController.update);
+    router.post('/api/items/', (req, res) => 
+    {
+        console.log("create item: ", req.body);
+        dataModel.insertTable("items", req.body, (data) => {
+            res.json(data);
+        });
+    });
+
+    router.patch('/api/items/', (req, res) => 
+    {
+        dataModel.updateTable("items", req.params.id, null, (data) => {
+            res.send(data);
+        });
+    });
     //router.delete('/api/items/',itemController.delete);
 }
 

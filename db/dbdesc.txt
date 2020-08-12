@@ -16,6 +16,7 @@ TABLE items:
         null or empty string = no schedule
         W<number> = weekly schedule in format 0xFFFFFF7F 
         M<number> = monthly schedule in format 0x7FFFFFFF
+        E<number> = every <number> days
 
 TABLE itemLink:
 	linkType:

@@ -150,4 +150,4 @@ dist
 # TernJS port file
 .tern-port
 
-.db\mtdb.db
+db/mtdb.db

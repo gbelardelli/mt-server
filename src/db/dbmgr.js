@@ -37,6 +37,15 @@ let db = new sqlite3.Database( DBSOURCE, (err) =>
     }
 });
 
+function prepareSchedule()
+{
+    // Check today week and week+1
+    // if not exist create week and week+1
+    // get all items with enddate = null or >= today
+    // 
+
+}
+
 function insertDefaultCategories(db)
 {
     console.log('insertDefaultCategories');
