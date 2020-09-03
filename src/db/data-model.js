@@ -39,7 +39,7 @@ function readTable( table, callback )
 
 function getItems( callback )
 {
-    let sql = `SELECT a.id, b.categoryName, c.instrumentName, a.title, a.description, a.duration, a.durationDesc, a.goalDesc,
+    let sql = `SELECT a.id, b.categoryName, b.id as catid, c.instrumentName, c.id as instid, a.title, a.description, a.duration, a.durationDesc, a.goalDesc,
                     a.scheduleDesc, a.startDate, a.endDate, a.lastPractice, a.totalTime, a.archived 
                 FROM items a, practiceCategory b, practiceInstrument c
                 WHERE a.categoryID = b.id AND a.instrumentID = c.id`;

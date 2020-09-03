@@ -39,6 +39,7 @@ app.get('/',
 
 require('./src/routes/item.route')(app); // Imports routes for items
 require('./src/routes/category.route')(app); // Imports routes for categories
+require('./src/routes/instrument.route')(app); // Imports routes for instrument
 //const practiceInstrument = require('./src/routes/instrument.route'); // Imports routes for instrument
 
 app.listen( srvListenPort, () =>

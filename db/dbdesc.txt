@@ -28,3 +28,7 @@ TABLE practice:
 		0 = da fare
 		1 = iniziato
 		2 = completato
+
+
+INSERT INTO "main"."items" ("id", "categoryID", "instrumentID", "title", "description", "duration", "durationDesc", "goalDesc", "scheduleDesc", "startDate", "endDate", "lastPractice", "totalTime", "archived") 
+    VALUES (NULL, '5', '1', 'ex6', 'ex6', '53', '', '', '', '1/2/2020', '', '1/8/2020', '', '0');
